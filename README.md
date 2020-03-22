@@ -123,7 +123,7 @@ Complete search component to your list views.
 - [ ]  Submit a Pull Request to merge `<firstName-lastName>` branch into master (student's repo).
 - [ ]  Add your TL as a Reviewer on the Pull Request.
 - [ ]  TL then will count the HW as done by merging the branch into master.
-
+- [ ] Xaver Pinero
 <!-- TLs: NOTE: use resources to coach, or share over zoom - avoid sharing entire solution folder. Share preview links if available. -->
 
 > Note: AFTER Sprint Challenge: Solutions to many stretch goals (and live demo URLs) are available from TLs (or GitHub admins.)
