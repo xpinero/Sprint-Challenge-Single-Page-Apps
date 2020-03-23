@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import CharacterCard from "./CharacterCard";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
-  const [character, setCharacter] = useState([]);
+  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     const getCharacters = () => {
       axios
-        .get('https://rickandmortyapi.com/documentation')
+        .get('https://rickandmortyapi.com/api/character/')
         .then(response => {
           console.log(response);
-          setCharacter(response.data);
+          setCharacters(response.data);
         })
         .catch(error => {
           console.log('Server Error', error);
@@ -25,8 +26,7 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      
-      <h2>TODO: `array.map()` over your state here!</h2>
+      {characters.map((character) => <CharacterCard character={character}></CharacterCard>)}
     </section>
   );
 }
