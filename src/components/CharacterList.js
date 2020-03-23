@@ -7,19 +7,19 @@ export default function CharacterList() {
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
-    const getCharacters = () => {
-      axios
-        .get('https://rickandmortyapi.com/documentation')
-        .then(response => {
-          console.log(response);
-          setCharacter(response.data);
-        })
-        .catch(error => {
-          console.log('Server Error', error);
-        });
-    };
+    // const getCharacters = () => {
+    //   axios
+    //     .get('https://rickandmortyapi.com/documentation')
+    //     .then(response => {
+    //       console.log(response);
+    //       setCharacter(response.data);
+    //     })
+    //     .catch(error => {
+    //       console.log('Server Error', error);
+    //     });
+    // };
 
-    getCharacters();
+    // getCharacters();
      //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
   }, []);
 
