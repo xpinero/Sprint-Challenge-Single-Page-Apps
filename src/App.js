@@ -12,10 +12,10 @@ export default function App() {
     <main data-testid='app'>
       <Header />
       <WelcomePage />
-      <SearchForm />
-      <LocationCard />
-      <CharacterList />
-      <CharacterCard />
+      <Route path='./components/SearchForm' component={SearchForm}  />
+      <Route path='./components/LocationCard' component={LocationCard}  />
+      <Route path='./components/CharacterList' component={CharacterList}  />
+      <Route path='./components/CharacterCard' component={CharacterCard}  />
     </main>
   );
 }
