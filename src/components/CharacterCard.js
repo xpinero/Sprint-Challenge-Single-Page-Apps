@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
-} from 'reactstrap';
+import { Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle } from 'reactstrap';
 
 export default function CharacterCard(props) {
   console.log(props);
@@ -12,7 +9,7 @@ export default function CharacterCard(props) {
       <Card>
         <CardImg
           top
-          width="100%"
+          width="100px"
           src={character.image}
           alt="Card image cap"
         />

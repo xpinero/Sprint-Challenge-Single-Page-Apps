@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom';
 
 export default function SearchForm(props) {
 
@@ -13,6 +14,8 @@ export default function SearchForm(props) {
           props.onSearchUpdate(e.target.value);
         }}
       />
+      <Link to="/"><div className="home-button">Home</div></Link>
     </section>
+    
   );
 }
