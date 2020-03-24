@@ -4,6 +4,7 @@ export default function SearchForm(props) {
 
   return (
     <section className="search-form">
+      Search Here
       <input
         id="search-box"
         value={props.text}
